@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SfFlexiPage n="ProvarQS__ProvarQS_Opportunity_Record_Page" s="" sobjectType="Opportunity" t="Provar QS Opportunity Record Page" template="flexipage:recordHomeWithSubheaderTemplateDesktop" type="RecordPage">
+  <regions>
+    <SfFlexiPageRegion n="header" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance n="force:highlightsPanel" s="0" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">collapsed</key>
+              <value valueClass="string">false</value>
+            </entry>
+            <entry>
+              <key valueClass="string">numVisibleActions</key>
+              <value valueClass="string">3</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="subheader" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance n="runtime_sales_pathassistant:pathAssistant" s="0" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">variant</key>
+              <value valueClass="string">linear</value>
+            </entry>
+            <entry>
+              <key valueClass="string">hideUpdateButton</key>
+              <value valueClass="string">false</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="main" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance content="tabs" n="flexipage__tabset" s="0" t=""/>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="sidebar" s="" t="" type="Region">
+      <children>
+        <SfFlexiPageComponentInstance n="force:relatedListQuickLinksContainer" s="0" t=""/>
+        <SfFlexiPageComponentInstance n="force:relatedListSingleContainer" s="1" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">relatedListApiName</key>
+              <value valueClass="string">OpportunityLineItems</value>
+            </entry>
+            <entry>
+              <key valueClass="string">parentFieldApiName</key>
+              <value valueClass="string">Opportunity.Id</value>
+            </entry>
+            <entry>
+              <key valueClass="string">relatedListComponentOverride</key>
+              <value valueClass="string">GRID</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+      </children>
+    </SfFlexiPageRegion>
+  </regions>
+  <facets>
+    <SfFlexiPageRegion n="detailTabContent" s="" t="" type="Facet">
+      <children>
+        <SfFlexiPageComponentInstance n="force:detailPanel" s="0" t=""/>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="Facet-e25f5a73-fd30-471a-a3f6-82c0d7b00a5a" s="" t="" type="Facet">
+      <children>
+        <SfFlexiPageComponentInstance n="ProvarQS__AuraProductSelector" s="0" t=""/>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="Facet-360d727b-150d-47fb-a06b-dbec7840d889" s="" t="" type="Facet">
+      <children>
+        <SfFlexiPageComponentInstance n="force:relatedListSingleContainer" s="0" t="">
+          <properties>
+            <entry>
+              <key valueClass="string">relatedListApiName</key>
+              <value valueClass="string">OpportunityContactRoles</value>
+            </entry>
+            <entry>
+              <key valueClass="string">parentFieldApiName</key>
+              <value valueClass="string">Opportunity.Id</value>
+            </entry>
+            <entry>
+              <key valueClass="string">relatedListComponentOverride</key>
+              <value valueClass="string">NONE</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="activityTabContent" s="" t="" type="Facet">
+      <children>
+        <SfFlexiPageComponentInstance n="runtime_sales_activities:activityPanel" s="0" t=""/>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="feedTabContent" s="" t="" type="Facet">
+      <children>
+        <SfFlexiPageComponentInstance n="forceChatter:recordFeedContainer" s="0" t=""/>
+      </children>
+    </SfFlexiPageRegion>
+    <SfFlexiPageRegion n="tabs" s="" t="" type="Facet">
+      <children>
+        <SfFlexiPageComponentInstance content="detailTabContent" n="flexipage__tab" s="0" t="Standard.Tab.detail"/>
+        <SfFlexiPageComponentInstance content="Facet-e25f5a73-fd30-471a-a3f6-82c0d7b00a5a" n="flexipage__tab" s="1" t="Aura Product Selector"/>
+        <SfFlexiPageComponentInstance content="Facet-360d727b-150d-47fb-a06b-dbec7840d889" n="flexipage__tab" s="2" t="Contact Roles"/>
+        <SfFlexiPageComponentInstance content="activityTabContent" n="flexipage__tab" s="3" t="Standard.Tab.activity">
+          <properties>
+            <entry>
+              <key valueClass="string">active</key>
+              <value valueClass="string">true</value>
+            </entry>
+          </properties>
+        </SfFlexiPageComponentInstance>
+        <SfFlexiPageComponentInstance content="feedTabContent" n="flexipage__tab" s="4" t="Standard.Tab.collaborate"/>
+      </children>
+    </SfFlexiPageRegion>
+  </facets>
+</SfFlexiPage>

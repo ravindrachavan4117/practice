@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadataProfileLayoutAssignments>
+  <layoutAssignments>
+    <sfLayoutAssignment layoutName="Account-ProvarQS__Provar QS Account Layout"/>
+    <sfLayoutAssignment layoutName="AccountBrand-Account BrandLayout"/>
+    <sfLayoutAssignment layoutName="AccountContactRole-Account Contact Role Layout"/>
+    <sfLayoutAssignment layoutName="Asset-Asset Layout"/>
+    <sfLayoutAssignment layoutName="AssetRelationship-Asset Relationship Layout"/>
+    <sfLayoutAssignment layoutName="AuthorizationFormText-Authorization Form Text Layout"/>
+    <sfLayoutAssignment layoutName="Campaign-Campaign Layout"/>
+    <sfLayoutAssignment layoutName="CampaignMember-Campaign Member Page Layout"/>
+    <sfLayoutAssignment layoutName="Case-ProvarQS__Provar QS Case Layout"/>
+    <sfLayoutAssignment layoutName="CaseClose-Close Case Layout"/>
+    <sfLayoutAssignment layoutName="ChannelProgram-Channel Program Layout"/>
+    <sfLayoutAssignment layoutName="ChannelProgramLevel-Channel Program Level Layout"/>
+    <sfLayoutAssignment layoutName="ChannelProgramMember-Channel Program Member Layout"/>
+    <sfLayoutAssignment layoutName="CollaborationGroup-Group Layout"/>
+    <sfLayoutAssignment layoutName="CommSubscription-Communication Subscription Layout"/>
+    <sfLayoutAssignment layoutName="CommSubscriptionChannelType-Communication Subscription Channel Type Layout"/>
+    <sfLayoutAssignment layoutName="CommunityMemberLayout-Community Member Layout"/>
+    <sfLayoutAssignment layoutName="Contact-Contact Layout"/>
+    <sfLayoutAssignment layoutName="Contact-Contact Layout" recordType="Contact.Other"/>
+    <sfLayoutAssignment layoutName="Contact-Contact Layout" recordType="Contact.ProvarQS__Customer"/>
+    <sfLayoutAssignment layoutName="Contact-Contact Layout" recordType="Contact.ProvarQS__Employee"/>
+    <sfLayoutAssignment layoutName="ContentVersion-Content Version Layout"/>
+    <sfLayoutAssignment layoutName="Contract-Contract Layout"/>
+    <sfLayoutAssignment layoutName="DuplicateRecordSet-Duplicate Record Set Layout"/>
+    <sfLayoutAssignment layoutName="EmailMessage-Email Message Layout"/>
+    <sfLayoutAssignment layoutName="EngagementChannelType-Engagement Channel Type Layout"/>
+    <sfLayoutAssignment layoutName="Event-Event Layout"/>
+    <sfLayoutAssignment layoutName="FeedItem-Feed Item Layout"/>
+    <sfLayoutAssignment layoutName="Global-Global Layout"/>
+    <sfLayoutAssignment layoutName="Idea-Idea Layout"/>
+    <sfLayoutAssignment layoutName="Image-Image Layout"/>
+    <sfLayoutAssignment layoutName="Individual-Individual Layout"/>
+    <sfLayoutAssignment layoutName="Lead-Lead Layout"/>
+    <sfLayoutAssignment layoutName="Macro-Macro Layout"/>
+    <sfLayoutAssignment layoutName="Opportunity-ProvarQS__Provar QS Opportunity Layout"/>
+    <sfLayoutAssignment layoutName="OpportunityContactRole-Opportunity Contact Role Layout"/>
+    <sfLayoutAssignment layoutName="OpportunityLineItem-Opportunity Product Layout"/>
+    <sfLayoutAssignment layoutName="Order-Order Layout"/>
+    <sfLayoutAssignment layoutName="OrderItem-Order Product Layout"/>
+    <sfLayoutAssignment layoutName="PartnerFundAllocation-Partner Fund Allocation Layout"/>
+    <sfLayoutAssignment layoutName="PartnerFundClaim-Partner Fund Claim Layout"/>
+    <sfLayoutAssignment layoutName="PartnerFundRequest-Partner Fund Request Layout"/>
+    <sfLayoutAssignment layoutName="PartnerMarketingBudget-Partner Marketing Budget Layout"/>
+    <sfLayoutAssignment layoutName="PartyConsent-Party Consent Layout"/>
+    <sfLayoutAssignment layoutName="Pricebook2-Price Book Layout"/>
+    <sfLayoutAssignment layoutName="PricebookEntry-Price Book Entry"/>
+    <sfLayoutAssignment layoutName="Product2-Product Layout"/>
+    <sfLayoutAssignment layoutName="ProfileSkill-Skill Layout"/>
+    <sfLayoutAssignment layoutName="ProfileSkillEndorsement-Endorsement Layout"/>
+    <sfLayoutAssignment layoutName="ProfileSkillUser-Skill User Layout"/>
+    <sfLayoutAssignment layoutName="QuickText-Quick Text Layout"/>
+    <sfLayoutAssignment layoutName="SOSSession-SOS Session Layout"/>
+    <sfLayoutAssignment layoutName="SOSSessionActivity-SOS Session Activity Layout"/>
+    <sfLayoutAssignment layoutName="Scorecard-Scorecard Layout"/>
+    <sfLayoutAssignment layoutName="ScorecardAssociation-Scorecard Association Layout"/>
+    <sfLayoutAssignment layoutName="ScorecardMetric-Scorecard Metric Layout"/>
+    <sfLayoutAssignment layoutName="SocialPersona-Social Persona Layout"/>
+    <sfLayoutAssignment layoutName="SocialPost-Social Post Layout"/>
+    <sfLayoutAssignment layoutName="Solution-Solution Layout"/>
+    <sfLayoutAssignment layoutName="Task-Task Layout"/>
+    <sfLayoutAssignment layoutName="User-User Layout"/>
+    <sfLayoutAssignment layoutName="UserAlt-User Profile Layout"/>
+    <sfLayoutAssignment layoutName="UserProvAccount-User Provisioning Account Layout"/>
+    <sfLayoutAssignment layoutName="UserProvisioningRequest-User Provisioning Request Layout"/>
+    <sfLayoutAssignment layoutName="WorkAccess-Access Layout"/>
+    <sfLayoutAssignment layoutName="WorkBadge-Badge Received Layout"/>
+    <sfLayoutAssignment layoutName="WorkBadgeDefinition-Badge Layout"/>
+    <sfLayoutAssignment layoutName="WorkOrder-Work Order Layout"/>
+    <sfLayoutAssignment layoutName="WorkOrderLineItem-Work Order Line Item Layout"/>
+    <sfLayoutAssignment layoutName="WorkThanks-Thanks Layout"/>
+  </layoutAssignments>
+</metadataProfileLayoutAssignments>

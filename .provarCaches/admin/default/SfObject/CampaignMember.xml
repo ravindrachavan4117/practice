@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" editPermission="false" keyPrefix="00v" label="Campaign Member" labelPlural="Campaign Members" layoutable="true" n="CampaignMember" queryable="true" retrieveable="true" s="" standardLabel="Campaign Member" t="Campaign Member (00v)" updatable="true" urlDetail="https://provar-trial-org--training.my.salesforce.com/{ID}" urlEdit="https://provar-trial-org--training.my.salesforce.com/{ID}/e" urlNew="https://provar-trial-org--training.my.salesforce.com/00v/e">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Campaign Member ID" type="id" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField length="18" n="CampaignId" relationshipName="Campaign" required="true" t="Campaign" type="reference" updateable="false">
+      <referenceTos>
+        <string>Campaign</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="LeadId" relationshipName="Lead" t="Lead" type="reference" updateable="false">
+      <referenceTos>
+        <string>Lead</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="18" n="ContactId" relationshipName="Contact" t="Contact" type="reference" updateable="false">
+      <referenceTos>
+        <string>Contact</string>
+      </referenceTos>
+    </sfField>
+    <sfField length="40" n="Status" type="picklist">
+      <picklistEntryIds>1,2</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="Responded" s=""/>
+        <sfPLE id="2" n="Sent" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="HasResponded" t="Responded" type="_boolean" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="SystemModstamp" t="System Modstamp" type="datetime" updateable="false"/>
+    <sfField createable="false" n="FirstRespondedDate" t="First Responded Date" type="date" updateable="false"/>
+    <sfField createable="false" length="255" n="Salutation" type="picklist" updateable="false">
+      <picklistEntryIds>3,4,5,6,7</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="3" n="Mr." s=""/>
+        <sfPLE id="4" n="Ms." s=""/>
+        <sfPLE id="5" n="Mrs." s=""/>
+        <sfPLE id="6" n="Dr." s=""/>
+        <sfPLE id="7" n="Prof." s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" length="255" n="Name" updateable="false"/>
+    <sfField createable="false" length="40" n="FirstName" t="First Name" updateable="false"/>
+    <sfField createable="false" length="80" n="LastName" t="Last Name" updateable="false"/>
+    <sfField createable="false" length="128" n="Title" updateable="false"/>
+    <sfField createable="false" length="255" n="Street" updateable="false"/>
+    <sfField createable="false" length="40" n="City" updateable="false"/>
+    <sfField createable="false" length="80" n="State" t="State/Province" updateable="false"/>
+    <sfField createable="false" length="20" n="PostalCode" t="Zip/Postal Code" updateable="false"/>
+    <sfField createable="false" length="80" n="Country" updateable="false"/>
+    <sfField createable="false" length="80" n="Email" type="email" updateable="false"/>
+    <sfField createable="false" length="40" n="Phone" type="phone" updateable="false"/>
+    <sfField createable="false" length="40" n="Fax" type="phone" updateable="false"/>
+    <sfField createable="false" length="40" n="MobilePhone" t="Mobile" type="phone" updateable="false"/>
+    <sfField createable="false" extraTypeInfo="plaintextarea" filterable="false" length="32000" n="Description" type="textarea" updateable="false"/>
+    <sfField createable="false" n="DoNotCall" t="Do Not Call" type="_boolean" updateable="false"/>
+    <sfField createable="false" n="HasOptedOutOfEmail" t="Email Opt Out" type="_boolean" updateable="false"/>
+    <sfField createable="false" n="HasOptedOutOfFax" t="Fax Opt Out" type="_boolean" updateable="false"/>
+    <sfField createable="false" length="255" n="LeadSource" t="Lead Source" type="picklist" updateable="false">
+      <picklistEntryIds>8,9,10,11,12,13,14,15,16,17,18,19</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="8" n="Advertisement" s=""/>
+        <sfPLE id="9" n="Employee Referral" s=""/>
+        <sfPLE id="10" n="External Referral" s=""/>
+        <sfPLE id="11" n="Partner" s=""/>
+        <sfPLE id="12" n="Public Relations" s=""/>
+        <sfPLE id="13" n="Seminar - Internal" s=""/>
+        <sfPLE id="14" n="Seminar - Partner" s=""/>
+        <sfPLE id="15" n="Trade Show" s=""/>
+        <sfPLE id="16" n="Web" s=""/>
+        <sfPLE id="17" n="Word of mouth" s=""/>
+        <sfPLE id="18" n="Other" s=""/>
+        <sfPLE id="19" n="Phone Inquiry" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" length="255" n="CompanyOrAccount" t="Company (Account)" updateable="false"/>
+    <sfField createable="false" length="40" n="Type" updateable="false"/>
+    <sfField createable="false" length="18" n="LeadOrContactId" t="Related Record" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+        <string>Contact</string>
+        <string>Lead</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="18" n="LeadOrContactOwnerId" relationshipName="LeadOrContactOwner" t="Related Record Owner" type="reference" updateable="false">
+      <referenceTos>
+        <string>Group</string>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+  </fields>
+  <childRelationships>
+    <sfObjectRelationship childName="RecordAction" field="RecordId" n="RecordActions" relationshipName="RecordActions" s="2-" t="RecordAction"/>
+    <sfObjectRelationship childName="RecordActionHistory" field="ParentRecordId" n="RecordActionHistories" relationshipName="RecordActionHistories" s="2-" t="RecordActionHistory"/>
+  </childRelationships>
+  <recordTypes>
+    <sfRecordType layoutsLoaded="false" n="&lt;default&gt;" t="Web Record Type Mapping"/>
+  </recordTypes>
+  <standardActions>
+    <sfActionLink modes="ObjectHome CampaignMembers List" n="New"/>
+    <sfActionLink modes="View CampaignMembers" n="Edit" requiresRow="true" s="1"/>
+    <sfActionLink lightningLabel="Delete" modes="View CampaignMembers" n="Delete" requiresRow="true" s="2" t="Del"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View CampaignMembers" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View CampaignMembers" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink alias="addCampaign" lightningLabel="Add to Campaign" modes="CampaignMembers" n="AddCampaign" newAction="true" t="Add to Campaign"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink modes="View" n="Clone" requiresRow="true"/>
+    <sfActionLink buttonName="convert" modes="View" n="ConvertLead" t="Convert Lead"/>
+    <sfActionLink n="CreateOpportunity" s=""/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="ObjectHome CampaignMembers" n="View" requiresRow="true" s="3"/>
+    <sfActionLink modes="View Submit" n="Submit" requiresRow="true"/>
+    <sfActionLink modes="View Remove" n="Remove"/>
+    <sfActionLink modes="View Unlock" n="Unlock" t="Unlock Record"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink modes="View" n="Share"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink buttonName="newOpp" modes="View" n="Create_Opportunity" t="Create Opportunity"/>
+    <sfActionLink modes="CampaignMembers" n="AddLead" t="Add Leads"/>
+    <sfActionLink modes="CampaignMembers" n="AddContact" t="Add Contacts"/>
+    <sfActionLink modes="CampaignMembers" n="ImportMembers" t="Manage Campaign Members"/>
+    <sfActionLink modes="CampaignMembers" n="ImportLeadsAndContacts" t="Import Leads and Contacts"/>
+    <sfActionLink modes="CampaignMembers" n="SendListEmailAction" t="Send List Email"/>
+    <sfActionLink modes="CampaignMembers" n="MassUpdateMemberStatus" t="Update Status"/>
+    <sfActionLink modes="CampaignMembers" n="MassRemoveMembers" t="Remove"/>
+    <sfActionLink modes="CampaignMembers" n="CampaignContactMultiAdd" t="Add Contacts To Campaign Member"/>
+    <sfActionLink modes="CampaignMembers" n="CampaignLeadMultiAdd" t="Add Leads To Campaign Member"/>
+    <sfActionLink modes="CampaignMembers" n="AddToCampaign" t="Add to Campaign"/>
+  </standardActions>
+  <homeListColumns>
+    <string>CAMPAIGNMEMBER.NAME</string>
+  </homeListColumns>
+  <lookupColumns>
+    <string>CAMPAIGNMEMBER.NAME</string>
+  </lookupColumns>
+  <weblinks/>
+  <searchResultColumns>
+    <string>CAMPAIGNMEMBER.NAME</string>
+  </searchResultColumns>
+  <listViewActions/>
+</sfObject>

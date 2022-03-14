@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject creatable="true" deleteable="true" detailsLoaded="false" editPermission="false" keyPrefix="0NX" label="SOS Session" labelPlural="SOS Sessions" layoutable="true" n="SOSSession" queryable="true" readPermission="false" retrieveable="true" s="" t="SOS Session (0NX)" updatable="true">
+  <standardActions>
+    <sfActionLink modes="ObjectHome SOSSessions" n="New"/>
+    <sfActionLink modes="View SOSSessions" n="Edit" requiresRow="true" s="2"/>
+    <sfActionLink modes="View SOSSessions" n="Delete" requiresRow="true" s="3"/>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View SOSSessions" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View SOSSessions" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+  </standardActions>
+</sfObject>

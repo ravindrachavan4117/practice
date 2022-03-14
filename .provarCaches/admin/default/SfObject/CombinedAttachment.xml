@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sfObject editPermission="false" label="Note, Attachment, Google Doc And File" labelPlural="Notes, Attachments, Google Docs And Files" n="CombinedAttachment" s="" standardLabel="Notes and Attachments" t="Note, Attachment, Google Doc And File">
+  <fields>
+    <sfField createable="false" editPermission="false" length="18" n="Id" t="Combined Attachment Id" type="id" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="IsDeleted" t="Deleted" type="_boolean" updateable="false"/>
+    <sfField createable="false" length="18" n="ParentId" relationshipName="Parent" required="true" t="Parent" type="reference" updateable="false">
+      <referenceTos>
+        <string>Account</string>
+        <string>AccountBrand</string>
+        <string>Asset</string>
+        <string>AssetRelationship</string>
+        <string>AuthorizationFormText</string>
+        <string>Campaign</string>
+        <string>Case</string>
+        <string>ChannelProgram</string>
+        <string>ChannelProgramLevel</string>
+        <string>ChannelProgramMember</string>
+        <string>CollaborationGroup</string>
+        <string>CommSubscription</string>
+        <string>CommSubscriptionChannelType</string>
+        <string>Contact</string>
+        <string>ContentWorkspace</string>
+        <string>Contract</string>
+        <string>Dashboard</string>
+        <string>DashboardComponent</string>
+        <string>EmailMessage</string>
+        <string>EmailTemplate</string>
+        <string>EngagementChannelType</string>
+        <string>EnhancedLetterhead</string>
+        <string>Event</string>
+        <string>Image</string>
+        <string>Lead</string>
+        <string>Network</string>
+        <string>Opportunity</string>
+        <string>Order</string>
+        <string>OrderItem</string>
+        <string>Organization</string>
+        <string>PartnerFundAllocation</string>
+        <string>PartnerFundClaim</string>
+        <string>PartnerFundRequest</string>
+        <string>PartnerMarketingBudget</string>
+        <string>PartyConsent</string>
+        <string>Product2</string>
+        <string>ProfileSkill</string>
+        <string>ProfileSkillEndorsement</string>
+        <string>ProfileSkillUser</string>
+        <string>Report</string>
+        <string>SOSSession</string>
+        <string>Site</string>
+        <string>SocialPost</string>
+        <string>Solution</string>
+        <string>Task</string>
+        <string>User</string>
+        <string>WorkBadgeDefinition</string>
+        <string>WorkOrder</string>
+        <string>WorkOrderLineItem</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="30" n="RecordType" t="Type" updateable="false"/>
+    <sfField createable="false" length="255" n="Title" updateable="false"/>
+    <sfField createable="false" editPermission="false" n="CreatedDate" t="Created" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="CreatedById" relationshipName="CreatedBy" t="Created By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" editPermission="false" n="LastModifiedDate" t="Last Modified Date" type="datetime" updateable="false"/>
+    <sfField createable="false" editPermission="false" length="18" n="LastModifiedById" relationshipName="LastModifiedBy" t="Last Modified By" type="reference" updateable="false">
+      <referenceTos>
+        <string>User</string>
+      </referenceTos>
+    </sfField>
+    <sfField createable="false" length="30" n="FileType" t="File Type" updateable="false"/>
+    <sfField createable="false" digits="9" n="ContentSize" t="Size" type="_int" updateable="false"/>
+    <sfField createable="false" length="40" n="FileExtension" t="File Extension" updateable="false"/>
+    <sfField createable="false" length="255" n="ContentUrl" t="Content URL" type="url" updateable="false"/>
+    <sfField createable="false" length="80" n="ExternalDataSourceName" t="External Data Source" updateable="false"/>
+    <sfField createable="false" length="80" n="ExternalDataSourceType" restrictedPicklist="true" t="Class ID" type="picklist" updateable="false">
+      <picklistEntryIds>1,2,3,4,5,6,7,8,9,10,11</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE id="1" n="contentHubItem" s=""/>
+        <sfPLE id="2" n="Datajourney" s=""/>
+        <sfPLE id="3" n="Identity" s=""/>
+        <sfPLE id="4" n="OData" s=""/>
+        <sfPLE id="5" n="OData4" s=""/>
+        <sfPLE id="6" n="OpenSearch" s=""/>
+        <sfPLE id="7" n="outgoingemail" s=""/>
+        <sfPLE id="8" n="SfdcOrg" s=""/>
+        <sfPLE id="9" n="SimpleURL" s=""/>
+        <sfPLE id="10" n="usermobileconfig" s=""/>
+        <sfPLE id="11" n="Wrapper" s=""/>
+      </picklistEntries>
+    </sfField>
+    <sfField createable="false" length="40" n="SharingOption" restrictedPicklist="true" t="Prevent others from sharing and unsharing" type="picklist" updateable="false">
+      <picklistEntryIds>12,13</picklistEntryIds>
+      <picklistEntries>
+        <sfPLE defaultValue="true" id="12" n="A" s="" t="Freeze Sharing Off"/>
+        <sfPLE id="13" n="R" s="" t="Freeze Sharing On"/>
+      </picklistEntries>
+    </sfField>
+  </fields>
+  <childRelationships/>
+  <recordTypes/>
+  <standardActions>
+    <sfActionLink lightningActionName="MassChangeOwner" massAction="true" modes="View List all_related_lists" n="ChangeOwnerOne" t="Change Owner"/>
+    <sfActionLink modes="View CombinedAttachments" n="ShowMore" t="Show More"/>
+    <sfActionLink modes="View CombinedAttachments" n="GoToList" t="Go To List"/>
+    <sfActionLink modes="RelatedList" n="PrevPage" t="Previous Page"/>
+    <sfActionLink modes="RelatedList" n="NextPage" t="Next Page"/>
+    <sfActionLink modes="ObjectHome" n="List" requiresRow="true"/>
+    <sfActionLink modes="Edit New Clone" n="save" requiresRow="true" t="Save"/>
+    <sfActionLink modes="Edit New Clone" n="save_new" requiresRow="true" t="Save and New"/>
+    <sfActionLink modes="Edit New Clone" n="cancel" requiresRow="true" t="Cancel"/>
+    <sfActionLink afterWaitUrl="ui:wait:timed?seconds=10" modes="View" n="SaveEdit" t="Save"/>
+    <sfActionLink modes="View" n="CancelEdit" t="Cancel"/>
+    <sfActionLink massAction="true" modes="View List" n="ChangeRecordType" t="Change Record Type"/>
+    <sfActionLink modes="View" n="email" t="Send an Email"/>
+    <sfActionLink lightningActionName="ShareFile" modes="View CombinedAttachments" n="Share" requiresRow="true"/>
+    <sfActionLink modes="QuickAction" n="publishersharebutton" t="Create"/>
+    <sfActionLink modes="ObjectHome List" n="Sort"/>
+    <sfActionLink modes="ObjectHome List" n="Filter"/>
+    <sfActionLink modes="ObjectHome View" n="Search"/>
+    <sfActionLink modes="ObjectHome List" n="Import"/>
+    <sfActionLink modes="View" n="PrintableView" t="Printable View"/>
+    <sfActionLink n="ObjectHome" requiresRow="true" t="Home"/>
+    <sfActionLink massAction="true" modes="CombinedAttachments" n="NewNote" newAction="true" t="New Note"/>
+    <sfActionLink lightningActionName="AttachFileFromDevice" lightningLabel="Upload Files" massAction="true" modes="CombinedAttachments" n="AttachFile" t="Attach File"/>
+    <sfActionLink lightningActionName="AttachFileFromDevice" locator="//td[contains(@class, 'pbButton')]//input[@type='file' and (@id='GinaRLNewFile' or @id='RFLNewFile' or @id='AttachmentRLNewFile' or @name='upload_file')]" modes="CombinedAttachments" n="NewFile" t="Upload Files"/>
+    <sfActionLink modes="CombinedAttachments" n="viewAll" t="View All"/>
+    <sfActionLink modes="detail ObjectHome List" n="New"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, '/e?retURL=') or contains(@href, '%2Fe%3FretURL%3D')]" modes="CombinedAttachments" n="Edit" requiresRow="true"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, '/sfc/servlet.shepherd/version/download/') or contains(@href, '%2Fsfc%2Fservlet.shepherd%2Fversion%2Fdownload/')]" modes="CombinedAttachments" n="Download" requiresRow="true"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, 'javascript:OverlayDialogElement.showFilePreview')]" modes="CombinedAttachments" n="Preview" requiresRow="true"/>
+    <sfActionLink locator="td[contains(@class, 'actionColumn')]/a[contains(@href, '/servlet.FileDownload?file=') or contains(@href, '%2Fservlet.FileDownload%3Ffile%3D')]" modes="CombinedAttachments" n="View" requiresRow="true"/>
+    <sfActionLink lightningActionName="DeleteFile" locator="td[contains(@class, 'actionColumn')]/a[contains(@href, 'deleteredirect.jsp')]" modes="CombinedAttachments" n="Delete" requiresRow="true"/>
+    <sfActionLink lightningActionName="FileLinkShare" modes="CombinedAttachments" n="PublicLink" requiresRow="true" t="Public Link"/>
+    <sfActionLink lightningActionName="GetFileDetail" modes="CombinedAttachments" n="ViewFileDetails" requiresRow="true" t="View File Details"/>
+    <sfActionLink lightningActionName="NewVersion" modes="CombinedAttachments" n="UploadNewVersion" requiresRow="true" t="Upload New Version"/>
+    <sfActionLink modes="CombinedAttachments" n="EditFileDetails" requiresRow="true" t="Edit File Details"/>
+    <sfActionLink lightningActionName="DetachFile" modes="CombinedAttachments" n="RemoveFromRecord" requiresRow="true" t="Remove from Record"/>
+  </standardActions>
+  <weblinks/>
+</sfObject>
