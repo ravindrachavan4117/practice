@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolingAppInfo>
+  <appDefinition DeveloperName="Platform" Label="appexchange default" NamespacePrefix="standard" NavType="Standard" UiType="Aloha">
+    <Metadata>&lt;CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata"   &gt;    &lt;defaultLandingTab&gt;standard-home&lt;/defaultLandingTab&gt;   &lt;isNavAutoTempTabsDisabled&gt;false&lt;/isNavAutoTempTabsDisabled&gt; &lt;isNavPersonalizationDisabled&gt;false&lt;/isNavPersonalizationDisabled&gt; &lt;isServiceCloudConsole&gt;false&lt;/isServiceCloudConsole&gt;       &lt;tabs&gt;standard-Chatter&lt;/tabs&gt; &lt;tabs&gt;standard-UserProfile&lt;/tabs&gt; &lt;tabs&gt;standard-CollaborationGroup&lt;/tabs&gt; &lt;tabs&gt;standard-File&lt;/tabs&gt; &lt;tabs&gt;standard-Account&lt;/tabs&gt; &lt;tabs&gt;standard-Contact&lt;/tabs&gt; &lt;tabs&gt;standard-report&lt;/tabs&gt; &lt;tabs&gt;standard-Dashboard&lt;/tabs&gt; &lt;uiType&gt;Aloha&lt;/uiType&gt;  &lt;/CustomApplication&gt;</Metadata>
+  </appDefinition>
+</toolingAppInfo>
